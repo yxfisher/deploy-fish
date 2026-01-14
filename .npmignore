@@ -1,0 +1,12 @@
+node_modules
+src
+build.*
+deploy.*
+package-lock.json
+package.json
+tsconfig.json
+tsdown.config.ts
+eslint.*
+.npmrc
+.npmignore
+.gitattributes
