@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 import type { DeployOptions } from './types'
 import { createWriteStream, existsSync } from 'node:fs'
 import { mkdir, unlink } from 'node:fs/promises'

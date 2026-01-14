@@ -4,16 +4,16 @@
 
 ### 安装
 ```shell
-pnpm i deploy-fish -D
+npm i deploy-fish -D
 
-pnpm approve-builds
 ```
 
 ### 配置
 ```ts
-// deploy.config.ts
-// deploy.config.prod.ts
 
+// deploy.config.prod.ts
+// deploy.config.test.ts
+// deploy.config.dev.ts
 import { defineConfig } from 'deploy-fish'
 
 export default defineConfig({
@@ -36,11 +36,10 @@ export default defineConfig({
 // package.json
 {
   "scripts": {
-    "deploy": "deploy-fish",
-    // "deploy:prod": "light-deploy --mode prod",
+    "deploy": "light-deploy --mode test",
   }
 }
 
 ```
 
-- `deploy.config.[mode].ts`文件名中的`[mode]` 和 `package.json` 中的 `deploy-fish --mode [mode]` 保持一致
+- `deploy.config.[mode].ts`文件名中的`[mode]` 和 `package.json` 中的 `light-deploy --mode [mode]` 保持一致
