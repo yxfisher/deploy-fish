@@ -1,7 +1,7 @@
 {
   "name": "deploy-fish",
   "type": "module",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "轻量级部署工具",
   "author": "fish",
   "license": "MIT",
